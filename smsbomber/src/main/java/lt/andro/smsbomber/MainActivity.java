@@ -3,6 +3,7 @@ package lt.andro.smsbomber;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -70,7 +71,10 @@ public class MainActivity extends Activity {
                     final int count = Integer.parseInt(countView.getText().toString());
                     final String message = messageView.getText().toString();
 
-                    // TODO use phoneNumber, count and message to send SMS messages
+                    final SmsManager smsManager = SmsManager.getDefault();
+                    for (int i = 0; i < count; i++) {
+                        smsManager.sendTextMessage(phoneNumber, null, message, null, null);
+                    }
                 }
             });
             return rootView;
