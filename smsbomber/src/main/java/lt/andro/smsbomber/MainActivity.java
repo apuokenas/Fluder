@@ -58,6 +58,14 @@ public class MainActivity extends Activity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+            final View buttonSend = rootView.findViewById(R.id.buttonSend);
+            buttonSend.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // TODO implement
+                }
+            });
             return rootView;
         }
     }
