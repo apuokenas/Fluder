@@ -1,15 +1,15 @@
 package lt.andro.smsbomber;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        
+
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
@@ -56,8 +56,27 @@ public class MainActivity extends Activity {
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+                                 Bundle savedInstanceState) {
+            final View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+            final View buttonSend = rootView.findViewById(R.id.buttonSend);
+            buttonSend.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    final TextView phoneNumberView = (TextView) rootView.findViewById(R.id.editTextPhoneNumber);
+                    final TextView countView = (TextView) rootView.findViewById(R.id.editTextCount);
+                    final TextView messageView = (TextView) rootView.findViewById(R.id.editTextMessage);
+
+                    final String phoneNumber = phoneNumberView.getText().toString();
+                    final int count = Integer.parseInt(countView.getText().toString());
+                    final String message = messageView.getText().toString();
+
+                    final SmsManager smsManager = SmsManager.getDefault();
+                    for (int i = 0; i < count; i++) {
+                        smsManager.sendTextMessage(phoneNumber, null, message, null, null);
+                    }
+                }
+            });
             return rootView;
         }
     }
