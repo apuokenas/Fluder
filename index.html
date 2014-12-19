@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Fluder by apuokenas</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Fluder</h1>
+        <h2>Užsisiųsk SMS&#39;ais</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/apuokenas/Fluder/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/apuokenas/Fluder/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/apuokenas/Fluder" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="fluder" class="anchor" href="#fluder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fluder</h1>
+
+<p><a href="https://gitter.im/apuokenas/Fluder?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter"></a></p>
+
+<p><code>PI;N</code> (angl. <code>TL;DR</code>)</p>
+
+<p>Masinio trumpųjų žinučių siuntimo programėlė "Fluder" skirta subombarduoti draugą, priešą ar net save patį. Arba dar geriau / blogiau - kokį nepažįstamąjį, kuris nė neįtarė, kad jo numeris taps lengvai / atsitiktinai išgalvojamu tau, <em>bombardieriau</em>, kursai negaili litų ant SMS'ų.</p>
+
+<p>Programėlė "Fluder" yra licencijuota pagal <a href="http://choosealicense.com/licenses/apache-2.0">"Apache License"</a> sąlygas, vadinasi, programinę įrangą galima laisvai:</p>
+
+<ul>
+<li>Naudoti bet kokiu tikslu.</li>
+<li>Modifikuoti.</li>
+<li>Platinti (tiek originalią, tiek modifikuotą versijas).
+Vienintelė ribojanti sąlyga - privaloma išsaugoti autorines teises ir atsišaukimą (jei toks yra) bei nereikalauti jokių autorinių honorarų.</li>
+</ul>
+
+<h2>
+<a id="projekto-techniniai-niuansai" class="anchor" href="#projekto-techniniai-niuansai" aria-hidden="true"><span class="octicon octicon-link"></span></a>Projekto techniniai niuansai</h2>
+
+<p>Šiame dokumente galite susipažinti su programėlės funkcionalumu.</p>
+
+<p>Idėjų semtasi iš kyborgų korifėjaus Viliaus Kraujučio 2014 m. sausį vestų "Android" mokymų.</p>
+
+<h3>
+<a id="programavimo-aplinkos-įdiegimas" class="anchor" href="#programavimo-aplinkos-%C4%AFdiegimas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programavimo aplinkos įdiegimas</h3>
+
+<p>Jei norite prisidėti, tobulinant aplikaciją, turite lokaliai įsidiegti:</p>
+
+<ul>
+<li>Naujausią oficialią integruotą "Android" programavimo aplinką <a href="http://developer.android.com/sdk/index.html">"Android Studio"</a>.</li>
+<li>Projekto <em>buildinimo</em> automatizavimo įrankį <a href="http://services.gradle.org/distributions/gradle-2.2.1-all.zip">"Gradle" (v2.2.1)</a>.</li>
+<li>Programavimui "Java" kalba skirtą priemonę <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">"Java SE Development Kit 8"</a>.</li>
+</ul>
+
+<h3>
+<a id="android-programėlės-generavimas" class="anchor" href="#android-program%C4%97l%C4%97s-generavimas" aria-hidden="true"><span class="octicon octicon-link"></span></a>"Android" programėlės generavimas</h3>
+
+<p>Pasinaudojus "Android Studio" vedliu, iš "GitHub" kodo versijavimo sistemos galima parsiųsti programėlės struktūrą (kitaip tariant, susigeneruoti aplikacijos pagrindą):</p>
+
+<p><code>VCS</code> --&gt; <code>Checkout from Version Control...</code> --&gt; <code>GitHub</code>.</p>
+
+<p>Atsidariusiame lange į "Vcs Version URL" laukelį įveskite:</p>
+
+<p><code>https://github.com/apuokenas/Fluder.git</code>,</p>
+
+<p>o kaip "Parent Directory" nurodykite vietinį aplanką, kuriame talpinsite projekto failus.</p>
+
+<p>P. S. Savo mašinoje reikia turėti git.exe bylą, kurios adresas įvedamas per "Settings" meniu:</p>
+
+<p><code>File</code> --&gt; <code>Settings</code> --&gt; <code>Version Control</code> --&gt; <code>Git</code>.</p>
+
+<p>Lauke "Path to Git executable" nurodomas kelias iki minėto failo. Pvz., jei esate "Windows" vartotojas:</p>
+
+<p><code>C:\Users\[Vartotojas]\AppData\Local\GitHub\PortableGit_[40_raidžių_ir_skaičių]\bin\git.exe</code>.</p>
+
+<p>Kodo modifikacijas ir susijusius komentarus galite peržiūrėti "GitHub" <a href="https://github.com/apuokenas/Fluder/commits">pakeitimų įrašuose</a>.</p>
+
+<h3>
+<a id="vaizdo-elementai" class="anchor" href="#vaizdo-elementai" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vaizdo elementai</h3>
+
+<h4>
+<a id="elementų-sąrašas" class="anchor" href="#element%C5%B3-s%C4%85ra%C5%A1as" aria-hidden="true"><span class="octicon octicon-link"></span></a>Elementų sąrašas</h4>
+
+<p>Pridėti teksto įvesties laukeliai:</p>
+
+<ul>
+<li>telefono numeriui,</li>
+<li>SMS pakartojimo skaičiui,</li>
+<li>SMS tekstui...</li>
+</ul>
+
+<p>...ir mygtukas "Siųsti".</p>
+
+<p>[IMG1_Placeholder]</p>
+
+<h4>
+<a id="elementų-pridėjimas" class="anchor" href="#element%C5%B3-prid%C4%97jimas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Elementų pridėjimas</h4>
+
+<ul>
+<li>Naudojami <code>GridLayout</code> arba <code>LinearLayout</code> išdėstymo būdai.</li>
+<li>Vaizdo komponentai (<code>Phone</code>, <code>Number</code>, <code>Multiline Text</code>) sudėti iš šoninės panelės.</li>
+<li>Nurodomi <code>id</code>, <code>text</code> ir <code>hint</code>.</li>
+<li>Tekstai <em>neįhardkodinami</em>, o sudedami į <code>strings.xml</code> failą.</li>
+</ul>
+
+<p>[IMG2_Placeholder]</p>
+
+<h3>
+<a id="veikimo" class="anchor" href="#veikimo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Veikimo...</h3>
+
+<h4>
+<a id="principas" class="anchor" href="#principas" aria-hidden="true"><span class="octicon octicon-link"></span></a>...principas</h4>
+
+<p>Suprogramuoti mygtuką "Siųsti" taip, kad jį paspaudus, būtų išsiunčiama to paties turinio trumpoji žinutė nurodytu numeriu <em>n</em> kartų.</p>
+
+<h4>
+<a id="įgyvendinimas" class="anchor" href="#%C4%AFgyvendinimas" aria-hidden="true"><span class="octicon octicon-link"></span></a>...įgyvendinimas</h4>
+
+<ul>
+<li>Pridėti mygtukui "Siųsti" <code>OnClickListener()</code> funkcija.</li>
+<li>Paimti visas reikšmes iš įvesties laukelių.</li>
+<li>Prasukti ciklą <em>n</em> kartų, kiekvieną kartą išsiunčiant SMS pranešimą.</li>
+</ul>
+      </section>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-46110910-4");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
