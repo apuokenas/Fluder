@@ -18,7 +18,8 @@ android {
         // is used to configure the manifest 'packageName' entry:
         applicationId "eu.tumenas.fluder"
         // The earliest version of the Android SDK that the app supports:
-        minSdkVersion 10        // Android 2.3 (API 9) and 2.3.3 (API 10) are the lowest versions supporting Google Play services SDK.
+        minSdkVersion 14        // Fragment class requires Android 3.0 Honeycomb (API Level 11), and attribute
+                                // layout_row is only used in Android 4.0 Ice Cream Sandwich (API level 14) and higher.
                                 // With the minimum SDK version of 8, the app will run on 99,3% of the devices,
                                 // while the cumulative distribution of API 10 is 87,9% (as of December, 2014).
         // The highest version of Android with which the app has benn tested:
