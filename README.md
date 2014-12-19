@@ -31,19 +31,21 @@ Jei norite prisidėti, tobulinant aplikaciją, turite lokaliai įsidiegti:
 
 Pasinaudojus "Android Studio" vedliu, iš "GitHub" kodo versijavimo sistemos galima parsiųsti programėlės struktūrą (kitaip tariant, susigeneruoti aplikacijos pagrindą):
 
-VCS --> Checkout from Version Control... --> GitHub.
+`VCS` --> `Checkout from Version Control...` --> `GitHub`.
 
 Atsidariusiame lange į "Vcs Version URL" laukelį įveskite:
+
 `https://github.com/apuokenas/Fluder.git`,
+
 o kaip "Parent Directory" nurodykite vietinį aplanką, kuriame talpinsite projekto failus.
 
 P. S. Savo mašinoje reikia turėti git.exe bylą, kurios adresas įvedamas per "Settings" meniu:
 
-File --> Settings --> Version Control --> Git.
+`File` --> `Settings` --> `Version Control` --> `Git`.
 
 Lauke "Path to Git executable" nurodomas kelias iki minėto failo. Pvz., jei esate "Windows" vartotojas:
 
-C:\Users\[Vartotojas]\AppData\Local\GitHub\PortableGit_[40_raidžių_ir_skaičių]\bin\git.exe.
+`C:\Users\[Vartotojas]\AppData\Local\GitHub\PortableGit_[40_raidžių_ir_skaičių]\bin\git.exe`.
 
 Kodo modifikacijas ir susijusius komentarus galite peržiūrėti "GitHub" [pakeitimų įrašuose](https://github.com/apuokenas/Fluder/commits).
 
@@ -56,7 +58,7 @@ Pridėti teksto įvesties laukeliai:
 * SMS pakartojimo skaičiui,
 * SMS tekstui...
 
-...ir mygtukas `Siųsti`.
+...ir mygtukas "Siųsti".
 
 [IMG1_Placeholder]
 
