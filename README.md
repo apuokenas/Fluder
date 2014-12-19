@@ -13,7 +13,7 @@ Programėlė "Fluder" yra licencijuota pagal ["Apache License"](http://chooseali
 * Platinti (tiek originalią, tiek modifikuotą versijas).
 Vienintelė ribojanti sąlyga - privaloma išsaugoti autorines teises ir atsišaukimą (jei toks yra) bei nereikalauti jokių autorinių honorarų.
 
-### Projekto techniniai niuansai
+## Projekto techniniai niuansai
 
 Šiame dokumente galite susipažinti su programėlės funkcionalumu.
 
@@ -51,7 +51,7 @@ Kodo modifikacijas ir susijusius komentarus galite peržiūrėti "GitHub" [pakei
 
 ### Vaizdo elementai
 
-## Elementų sąrašas
+#### Elementų sąrašas
 
 Pridėti teksto įvesties laukeliai:
 * telefono numeriui,
@@ -62,7 +62,7 @@ Pridėti teksto įvesties laukeliai:
 
 [IMG1_Placeholder]
 
-## Elementų pridėjimas
+#### Elementų pridėjimas
 
 * Naudojami `GridLayout` arba `LinearLayout` išdėstymo būdai.
 * Vaizdo komponentai (`Phone`, `Number`, `Multiline Text`) sudėti iš šoninės panelės.
@@ -73,11 +73,11 @@ Pridėti teksto įvesties laukeliai:
 
 ### Veikimo...
 
-## ...principas
+#### ...principas
 
 Suprogramuoti mygtuką "Siųsti" taip, kad jį paspaudus, būtų išsiunčiama to paties turinio trumpoji žinutė nurodytu numeriu *n* kartų.
 
-## ...įgyvendinimas
+#### ...įgyvendinimas
 
 * Pridėti mygtukui "Siųsti" `OnClickListener()` funkcija.
 * Paimti visas reikšmes iš įvesties laukelių.
