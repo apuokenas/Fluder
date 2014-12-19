@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SMS Bomber</string>
+    <!-- Instead of hardcoded string, use @string resource. -->
+    <string name="app_name">Fluder</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="phone_number_text">+37061121436</string>
-    <string name="phone_number_hint">Telefono Numeris</string>
-    <string name="count_hint">Pakartojimai</string>
+    <string name="phone_number_text">+37060000000</string>
+    <string name="phone_number_hint">Telefono numeris</string>
+    <string name="count_hint">SMS skaičius</string>
     <string name="count_text">13</string>
-    <string name="message_hint">Pranešimas</string>
-    <string name="message_text">Android programėlių dirbtuvės. www.gdg-vilnius.lt ir andro.lt</string>
+    <string name="message_hint">Tekstinis pranešimas</string>
+    <string name="message_text">Java kursinis</string>
     <string name="button_send_text">Siųsti</string>
 
 </resources>
