@@ -3,8 +3,6 @@ Fluder
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/apuokenas/Fluder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/apuokenas/Fluder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 `PI;N` (angl. `TL;DR`)
 
 Masinio trumpųjų žinučių siuntimo programėlė "Fluder" skirta subombarduoti draugą, priešą ar net save patį. Arba dar geriau / blogiau - kokį nepažįstamąjį, kuris nė neįtarė, kad jo numeris taps lengvai / atsitiktinai išgalvojamu tau, *bombardieriau*, kursai negaili litų ant SMS'ų.
