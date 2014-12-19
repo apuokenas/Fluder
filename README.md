@@ -60,7 +60,7 @@ Pridėti teksto įvesties laukeliai:
 
 ...ir mygtukas "Siųsti".
 
-[IMG1_Placeholder]
+![screenshot 2014-01-18 10_08_54](https://cloud.githubusercontent.com/assets/1078947/5501422/35b41210-8763-11e4-89b6-ee849c089271.png)
 
 #### Elementų pridėjimas
 
@@ -69,7 +69,7 @@ Pridėti teksto įvesties laukeliai:
 * Nurodomi `id`, `text` ir `hint`.
 * Tekstai *neįhardkodinami*, o sudedami į `strings.xml` failą.
 
-[IMG2_Placeholder]
+![screenshot 2014-01-18 10_09_12](https://cloud.githubusercontent.com/assets/1078947/5501423/38075220-8763-11e4-97f3-dd5222057c18.png)
 
 ### Veikimo...
 
