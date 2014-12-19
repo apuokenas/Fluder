@@ -1,4 +1,4 @@
-package lt.andro.smsbomber;
+package eu.tumenas.fluder;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -55,8 +55,7 @@ public class MainActivity extends Activity {
         }
 
         @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
+        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             final View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
             final View buttonSend = rootView.findViewById(R.id.buttonSend);
